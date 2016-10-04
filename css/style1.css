@@ -1,0 +1,176 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #333;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #358;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  margin : 0;
+}
+
+.main-nav {
+  margin : 5px 0;
+  padding : 5px;
+  display : inline-block;
+  vertical-align : top
+  }
+
+.name a,
+.main-nav a {
+	text-align: center;
+  padding : 10px;
+  display : inline-block;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #69C;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #C96;
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.main-header{
+  padding : 5px 0;
+}
+
+.banner, .main-footer {
+  text-align: center;
+  margin : auto;
+
+    }
+
+ .col {
+    padding : 10px;
+   
+  }
+
+.banner {
+	color: #fff;
+	background: #469;
+  padding : 10px;
+  margin-bottom: 20px;
+ 
+}
+
+.main-footer {
+	background: #69C;
+	padding: 2em 0;
+	margin-top: 20px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+.container {
+  width : 90%;
+  margin : auto;
+  }
+
+ 
+  .primary {
+    width : 60%;
+    }
+
+  .secondary {
+    width : 40%;
+    }
+
+  .main-nav {
+   float : right;
+  }
+
+  .name, .col {
+  float : left;
+  }
+
+.main-nav li {
+  display : inline-block;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+.container {
+  width : 80%;
+  max-width : 1400px;
+  margin : auto;
+  }
+
+ 
+  .primary {
+    width : 40%;
+    }
+
+  .secondary, .tertiary {
+    width : 30%;
+    }
+
+  
+}
+
